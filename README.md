@@ -1,4 +1,4 @@
-# EDI - NL Public Reference Wallet (Verificatie Model)
+# EDI - NL Public Reference Wallet
 
 Under the [Working Agenda Value Driven Digitization](https://www.digitaleoverheid.nl/kabinetsbeleid-digitalisering/werkagenda/),
 the Dutch government is preparing for the introduction of European digital identity wallets (in
@@ -202,6 +202,8 @@ in the URL, which is provided using self-signed certificates.
 
 Besides that, the development setup runs without using TLS. Therefore, the feature `allow_http_return_url` enables the
 possibility to use a return URL with the scheme `http` (while normally `https` is only allowed).
+
+The local wallet can be connected to Sentry for crash and error reporting by setting the `SENTRY_DSN` environment variable.
 
 Additionally, the `wallet` crate offers the `config_env` feature to aid during local development, which does the following:
 

@@ -1,0 +1,29 @@
+certificate_signing_key_identifier = "certificate_signing_key"
+instruction_result_signing_key_identifier = "instruction_result_signing_key"
+attestation_wrapping_key_identifier = "attestation_wrapping_key"
+pin_pubkey_encryption_key_identifier = "pin_pubkey_encryption_key"
+pin_public_disclosure_protection_key_identifier = "pin_public_disclosure_protection_key"
+
+# Indicates whether logging should be output in a structured (JSON) manner.
+#structured_logging = false
+
+[database]
+host = "${DB_HOST}"
+username = "${DB_USERNAME}"
+password = "${DB_PASSWORD}"
+name = "${DB_NAME}"
+
+[webserver]
+ip = "0.0.0.0"
+port = ${WALLET_PROVIDER_PORT}
+
+[pin_policy]
+# rounds = 4
+# attempts_per_round = 4
+# timeouts_in_ms = [60_000, 300_000, 3_600_000]
+
+[hsm]
+library_path = "${HSM_LIBRARY_PATH}"
+user_pin = "${HSM_USER_PIN}"
+max_sessions = 3
+max_session_lifetime_in_sec = 900

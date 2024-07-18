@@ -1,0 +1,198 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+def overrideFlutterMinSdkVersion = 24
+def overrideFlutterTargetSdkVersion = 34
+def overrideFlutterCompileSdkVersion = 34
+
+def dartEnvironmentVariables = []
+if (project.hasProperty('dart-defines')) {
+    dartEnvironmentVariables = project.property('dart-defines')
+            .split(',')
+            .collectEntries { entry ->
+                def pair = new String(entry.decodeBase64(), 'UTF-8').split('=')
+
+                // Check if the pair actually contains 2 values, else return empty string as value.
+                [(pair.first()): pair.size() == 2 ? pair.last() : '']
+            }
+}
+
+// Universal / deep links config
+def ulHostname = dartEnvironmentVariables['UL_HOSTNAME']
+def ulHostnameIsSet = ulHostname != null && !ulHostname.isEmpty()
+
+def ulIntentFilterAutoVerify = ulHostnameIsSet
+def ulIntentFilterHost = ulHostnameIsSet ? ulHostname : '*'
+def ulIntentFilterPathPrefix = ulHostnameIsSet ? '/deeplink' : ''
+def ulIntentFilterScheme = ulHostnameIsSet ? 'https' : 'walletdebuginteraction'
+
+android {
+    compileSdkVersion overrideFlutterCompileSdkVersion
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    ndkVersion "26.2.11394342"
+
+    sourceSets {
+        main {
+            // Include native libraries
+            jniLibs.srcDirs += 'src/main/jniLibs'
+        }
+    }
+
+    packagingOptions {
+        // Exclude the platform_support.so files that are added by the
+        // platform_support module, as this code is also in libwallet_core.so
+        jniLibs {
+            excludes += "**/libplatform_support.so"
+        }
+    }
+
+    defaultConfig {
+        applicationId "nl.ictu.edi.wallet.latest"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
+        minSdkVersion overrideFlutterMinSdkVersion
+        targetSdkVersion overrideFlutterTargetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+
+        // Set universal & deep links intent-filter placeholders
+        manifestPlaceholders['ulIntentFilterAutoVerify'] = ulIntentFilterAutoVerify
+        manifestPlaceholders['ulIntentFilterHost'] = ulIntentFilterHost
+        manifestPlaceholders['ulIntentFilterPathPrefix'] = ulIntentFilterPathPrefix
+        manifestPlaceholders['ulIntentFilterScheme'] = ulIntentFilterScheme
+    }
+
+    signingConfigs {
+        common {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file('../' + keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    // Debug and Profile builds use release keys if they're available, auto-available debug keys if not.
+    // Release build needs release keys (i.e., wallet_app/android/key.properties, wallet_app/android/keystore/local-keystore.jks).
+    buildTypes {
+        debug {
+            keystoreProperties["storeFile"] ? (signingConfig signingConfigs.common) : (signingConfig signingConfigs.debug)
+            logger.quiet("Build type ${name}, using keystore: ${signingConfig.storeFile}")
+
+            packagingOptions {
+                doNotStrip "**/*.so"
+            }
+        }
+        profile {
+            keystoreProperties["storeFile"] ? (signingConfig signingConfigs.common) : (signingConfig signingConfigs.debug)
+            logger.quiet("Build type ${name}, using keystore: ${signingConfig.storeFile}")
+        }
+        release {
+            signingConfig signingConfigs.common
+            logger.quiet("Build type ${name}, using keystore: ${signingConfig.storeFile}")
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            ndk {
+                abiFilters "arm64-v8a", "armeabi-v7a", "x86_64"
+            }
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "net.java.dev.jna:jna:5.7.0@aar" // Java Native Access
+
+    implementation project(path: ':platform_support')
+}
+
+// Target directory for the Rust library files
+def jniTargetDir = "${project.projectDir}/src/main/jniLibs"
+
+// Register tasks to build the Rust code and copy the resulting library files
+[
+        Debug  : [false, null],
+        Profile: [true, ['--locked', '--release']],
+        Release: [true, ['--locked', '--release']]
+].each {
+    def taskPostfix = it.key
+    def (doStrip, profileMode) = it.value
+    tasks.whenTaskAdded { task ->
+        if (task.name == "pre${taskPostfix}Build") {
+            task.dependsOn "cargoBuildNativeLibrary$taskPostfix"
+        }
+    }
+    tasks.register("cargoBuildNativeLibrary$taskPostfix", Exec) {
+        workingDir "../../../wallet_core"
+
+        // Build the Rust code (wallet_core)
+        executable = 'cargo'
+        args = ['ndk',
+                '-t', 'armeabi-v7a',
+                '-t', 'arm64-v8a',
+                '-t', 'x86_64',
+                '-o', jniTargetDir
+        ]
+        if (!doStrip) {
+            args += '--no-strip'
+        }
+        args += [
+                'build',
+                '-p', 'flutter_api'
+        ]
+        if (profileMode != null) {
+            args += profileMode
+        }
+        if (dartEnvironmentVariables['ALLOW_HTTP_RETURN_URL'] == 'true') {
+            args += ['--features', 'wallet/allow_http_return_url']
+        }
+        if (dartEnvironmentVariables['ENV_CONFIGURATION'] == 'true') {
+            args += ['--features', 'wallet/env_config']
+        }
+    }
+}
+
+clean.doFirst {
+    println "Cleaning $jniTargetDir"
+    delete jniTargetDir
+}

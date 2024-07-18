@@ -1,0 +1,921 @@
+{
+    "@@locale": "nl",
+    "@@last_modified": "2024-06-28T13:58:42+02:00",
+    "aboutScreenDescription": "De NL Wallet wordt gemaakt door de Nederlandse overheid, zodat iedereen digitale diensten veilig en gemakkelijk kan gebruiken.\n\nJe kunt de ontwikkelingen volgen op {url}.",
+    "aboutScreenPrivacyCta": "Privacybeleid",
+    "aboutScreenTermsCta": "Gebruiksvoorwaarden",
+    "aboutScreenTitle": "Over de NL Wallet",
+    "activitySummaryCardsAdded": "{activitySummaryCardsAdded, plural, one {{count} kaart toegevoegd} other {{count} kaarten toegevoegd}}",
+    "activitySummaryEmpty": "Geen activiteiten",
+    "activitySummaryLastMonth": "Activiteiten vorige maand",
+    "activitySummaryLastWeek": "Activiteiten vorige week",
+    "activitySummaryLoggedInMultiple": "ingelogd bij {organizations} en {organization}",
+    "activitySummaryLoggedInWith": "ingelogd bij {organization}",
+    "activitySummaryLoggedInWithOthers": "nog {nrOrganizations} organisaties",
+    "activitySummaryPrefix": "Je hebt",
+    "activitySummarySeparator": "en",
+    "activitySummarySharedWith": "gedeeld met {organization}",
+    "activitySummarySharedWithMultiple": "gedeeld met {organizations} en {organization}",
+    "activitySummarySharedWithOthers": "nog {nrOrganizations} organisaties",
+    "activitySummaryToday": "Activiteiten vandaag",
+    "appTitle": "NL Wallet",
+    "cardAttributeRowTitle": "Uit {name}",
+    "@cardAttributeRowTitle": {
+        "placeholders": {
+            "name": {
+                "example": "Persoonsgegevens",
+                "type": "String"
+            }
+        }
+    },
+    "cardDataIncorrectScreenDescription": "Verkeerde gegevens kunnen voor problemen zorgen. Neem contact op met jouw gemeente om je gegevens te laten aanpassen.\n\nWacht je nog op een aanpassing? Het kan even duren voordat die beschikbaar is in de app.",
+    "cardDataIncorrectScreenSubhead": "Kloppen de gegevens niet?",
+    "cardDataScreenDataPrivacyBanner": "Dit overzicht is alleen voor jou. Deel alleen gegevens via een uitnodiging in de app.",
+    "cardDataScreenIncorrectCta": "Kloppen de gegevens niet?",
+    "cardDataScreenTitle": "Gegevens uit {title}",
+    "cardDetailScreenCardDataCta": "Gegevens in deze kaart",
+    "cardDetailScreenCardDeleteCta": "Kaart verwijderen",
+    "cardDetailScreenCardHistoryCta": "Kaartactiviteiten",
+    "cardDetailScreenCardUpdateCta": "Opnieuw ophalen",
+    "cardDetailScreenCardValidUntil": "Geldig tot en met {dateTime}",
+    "@cardDetailScreenCardValidUntil": {
+        "placeholders": {
+            "dateTime": {
+                "example": "April 25 13:31",
+                "type": "String"
+            }
+        }
+    },
+    "cardDetailScreenIssuerCta": "Over de uitgever",
+    "cardDetailScreenLatestIssuedOperation": "Laatste update {dateTime}",
+    "@cardDetailScreenLatestIssuedOperation": {
+        "placeholders": {
+            "dateTime": {
+                "example": "April 25 13:31",
+                "type": "String"
+            }
+        }
+    },
+    "cardDetailScreenLatestIssuedOperationUnknown": "Laatste update onbekend",
+    "cardDetailScreenLatestSuccessInteraction": "{timeAgo} {shareStatus} met {organization}",
+    "@cardDetailScreenLatestSuccessInteraction": {
+        "placeholders": {
+            "organization": {
+                "example": "Organization",
+                "type": "String"
+            },
+            "shareStatus": {
+                "example": "failed to share",
+                "type": "String"
+            },
+            "timeAgo": {
+                "example": "4 hours ago",
+                "type": "String"
+            }
+        }
+    },
+    "cardDetailScreenLatestSuccessInteractionUnknown": "Nog nooit gedeeld",
+    "cardDetailScreenNoUpdateAvailableSheetCloseCta": "Sluiten",
+    "cardDetailScreenNoUpdateAvailableSheetDescription": "Er zijn op dit moment geen nieuwe gegevens beschikbaar van deze kaart.\n\nVerwacht je nieuwe gegevens? Dan kan het een paar dagen duren voordat je de nieuwe gegevens kan ophalen. Probeer het later opnieuw.",
+    "cardDetailScreenNoUpdateAvailableSheetTitle": "Je hebt de laatste versie",
+    "cardHistoryDisclosureCancelled": "Delen gestopt",
+    "cardHistoryDisclosureError": "Delen mislukt",
+    "cardHistoryDisclosureSuccess": "Gegevens gedeeld",
+    "cardHistoryIssuanceSuccess": "Kaart aangemaakt",
+    "cardHistoryLoginCancelled": "Inloggen gestopt",
+    "cardHistoryLoginError": "Inloggen mislukt",
+    "cardHistoryLoginSuccess": "Ingelogd",
+    "cardHistoryScreenTitle": "Kaartactiviteiten",
+    "cardHistorySigningCancelled": "Ondertekenen gestopt",
+    "cardHistorySigningError": "Ondertekenen mislukt",
+    "cardHistorySigningSuccess": "Ondertekend",
+    "cardHistoryTimelineOperationExpired": "Kaart verlopen",
+    "cardHistoryTimelineOperationRenewed": "Kaart vernieuwd",
+    "cardTitleSemanticsLabel": "Kaart: {cardTitle}",
+    "@cardTitleSemanticsLabel": {
+        "placeholders": {
+            "cardTitle": {
+                "example": "Personal data",
+                "type": "String"
+            }
+        }
+    },
+    "cardValueFalse": "Nee",
+    "cardValueGenderFemale": "Vrouw",
+    "cardValueGenderMale": "Man",
+    "cardValueGenderNotApplicable": "Niet van toepassing",
+    "cardValueGenderUnknown": "Onbekend",
+    "cardValueTrue": "Ja",
+    "changeLanguageScreenTitle": "Kies een taal",
+    "checkAgreementPageCancelCta": "Nee",
+    "checkAgreementPageConfirmCta": "Ja, volgende",
+    "checkAgreementPageDataIncorrectCta": "Klopt er iets niet?",
+    "checkAgreementPageShowDocumentCta": "PDF bekijken",
+    "checkAgreementPageSignProvider": "{organization} gebruikt {provider} voor het ondertekenen van afspraken.",
+    "@checkAgreementPageSignProvider": {
+        "placeholders": {
+            "organization": {
+                "example": "Housing Corporation A",
+                "type": "String"
+            },
+            "provider": {
+                "example": "DocuSign",
+                "type": "String"
+            }
+        }
+    },
+    "checkAgreementPageSubtitle": "Controleer de afspraken voor je verder gaat.",
+    "checkAgreementPageTitle": "Ken je de afspraken?",
+    "checkAttributesScreenDataIncorrectCta": "Kloppen je gegevens niet?",
+    "checkAttributesScreenSubtitle": "Uitgegeven door {issuer}",
+    "checkAttributesScreenTitle": "{checkAttributesScreenTitle, plural, one {{count} gegeven uit {title}} other {{count} gegevens uit {title}}}",
+    "confirmAgreementPageCancelCta": "Nee",
+    "confirmAgreementPageConfirmCta": "Ja, tekenen",
+    "confirmAgreementPageDataIncorrectCta": "Klopt er iets niet?",
+    "confirmAgreementPageSignProvider": "Je gaat ondertekenen met {provider}",
+    "@confirmAgreementPageSignProvider": {
+        "placeholders": {
+            "provider": {
+                "example": "DocuSign",
+                "type": "String"
+            }
+        }
+    },
+    "confirmAgreementPageTitle": "Wil je ondertekenen met deze gegevens?",
+    "dashboardScreenFooter": "De overheid ontwikkelt deze app voor jouw gemak, privacy en veiligheid. Lees meer in {cta}.",
+    "dashboardScreenFooterCta": "Over de app",
+    "dashboardScreenMenuWCAGLabel": "Navigatiemenu",
+    "dashboardScreenOverviewAnnouncement": "NL Wallet overzicht",
+    "dashboardScreenQrCta": "Scan QR-code",
+    "dashboardScreenTitle": "Menu",
+    "dataAttributeSectionTitle": "Uit {source}",
+    "@dataAttributeSectionTitle": {
+        "placeholders": {
+            "source": {
+                "example": "Persoonsgegevens",
+                "type": "String"
+            }
+        }
+    },
+    "dataIncorrectScreenApproveCta": "Kaart toch toevoegen",
+    "dataIncorrectScreenApproveDescription": "De kaart nu toevoegen en updaten als de gegevens zijn aangepast.",
+    "dataIncorrectScreenApproveTitle": "Kaart toevoegen",
+    "dataIncorrectScreenDeclineCta": "Kaart afwijzen",
+    "dataIncorrectScreenDeclineDescription": "Als je de gegevens afwijst worden deze gegevens niet opgeslagen in je Wallet.",
+    "dataIncorrectScreenDeclineTitle": "Kaart afwijzen",
+    "dataIncorrectScreenHeaderDescription": "Laat de gegevens dan aanpassen door de organisatie die ze aanbiedt. Je kunt nu twee dingen doen:",
+    "dataIncorrectScreenHeaderTitle": "Kloppen de gegevens niet?",
+    "detailsIncorrectScreenDescription": "Als je gegevens niet kloppen kan dat voor problemen zorgen. Neem contact op met jouw gemeente om je gegevens te laten aanpassen.\n\nWacht je nog op een aanpassing? Het kan even duren voordat die beschikbaar is in de app.",
+    "detailsIncorrectScreenTitle": "Zijn je gegevens onjuist?",
+    "digidHelpScreenHelpNeededCta": "Naar DigiD Hulp",
+    "digidHelpScreenHelpNeededDescription": "DigiD Hulp kan je helpen met DigiD.",
+    "digidHelpScreenHelpNeededTitle": "Kom je er niet uit?",
+    "digidHelpScreenNoDigidCta": "DigiD aanvragen",
+    "digidHelpScreenNoDigidDescription": "Woon je in Nederland en heb je een Nederlands identiteitsbewijs? Dan kun je een DigiD aanvragen.",
+    "digidHelpScreenNoDigidTitle": "Heb je nog geen DigiD?",
+    "digidHelpScreenTitle": "Hulp nodig met DigiD?",
+    "disclosureConfirmDataAttributesCheckConditionsCta": "Lees de voorwaarden",
+    "disclosureConfirmDataAttributesDisclaimer": "Bedenk altijd of delen verstandig is.",
+    "disclosureConfirmDataAttributesPageApproveCta": "Delen",
+    "disclosureConfirmDataAttributesPageDenyCta": "Nee",
+    "disclosureConfirmDataAttributesPageNotSharedButStoredSubtitle": "{count, plural, one {Je gegevens worden 1 maand bewaard en niet gedeeld met andere  organisaties} other {Je gegevens worden {count} maanden bewaard en niet gedeeld met andere organisaties}}",
+    "@disclosureConfirmDataAttributesPageNotSharedButStoredSubtitle": {
+        "placeholders": {
+            "count": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "disclosureConfirmDataAttributesPageNotSharedNotStoredSubtitle": "Je gegevens worden niet bewaard en niet gedeeld met andere organisaties",
+    "disclosureConfirmDataAttributesPageSharedAndStoredSubtitle": "{count, plural, one {Je gegevens worden 1 maand bewaard en gedeeld met andere organisaties} other {Je gegevens worden {count} maanden bewaard en gedeeld met andere organisaties}}",
+    "@disclosureConfirmDataAttributesPageSharedAndStoredSubtitle": {
+        "placeholders": {
+            "count": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "disclosureConfirmDataAttributesPageSharedNotStoredSubtitle": "Je gegevens worden niet bewaard maar wel gedeeld met organisaties",
+    "disclosureConfirmDataAttributesShareWithTitle": "Wil je delen met {organization}?",
+    "@disclosureConfirmDataAttributesShareWithTitle": {
+        "placeholders": {
+            "organization": {
+                "example": "DUO",
+                "type": "String"
+            }
+        }
+    },
+    "disclosureConfirmDataAttributesSharedAttributesInfo": "{count, plural, one {Alleen het volgende gegeven wordt gedeeld. Niet meer.} other {Alleen deze volgende {count} gegevens worden gedeeld. Niet meer.}}",
+    "@disclosureConfirmDataAttributesSharedAttributesInfo": {
+        "placeholders": {
+            "count": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "disclosureConfirmDataAttributesSubtitleData": "{count, plural, one {Gevraagde gegeven} other {Gevraagde gegevens}}",
+    "disclosureConfirmDataAttributesSubtitlePurpose": "Reden",
+    "disclosureConfirmDataAttributesSubtitleTerms": "Afspraken",
+    "disclosureConfirmPinPageForLoginTitle": "Login bij {organization} met je pincode",
+    "disclosureConfirmPinPageTitle": "Gegevens versturen met je pincode",
+    "disclosureGenericErrorPageTitle": "Er ging iets mis",
+    "disclosureLoadingSubtitle": "De aanvraag wordt opgehaald",
+    "disclosureLoadingTitle": "Even geduld",
+    "disclosureMissingAttributesPageCloseCta": "Aanvraag stoppen",
+    "disclosureMissingAttributesPageDescription": "{organization} vraagt om gegevens die nog niet in je Wallet staan.",
+    "@disclosureMissingAttributesPageDescription": {
+        "placeholders": {
+            "organization": {
+                "example": "DUO",
+                "type": "String"
+            }
+        }
+    },
+    "disclosureMissingAttributesPageReportIssueCta": "Wil je een probleem melden?",
+    "disclosureMissingAttributesPageTitle": "Je mist gegevens",
+    "disclosureReportSubmittedPageCloseCta": "Sluiten",
+    "disclosureReportSubmittedPageSubtitle": "Je melding is anoniem verstuurd.\n\nDeel nooit je gegevens met een organisatie die je niet vertrouwt.",
+    "disclosureReportSubmittedPageTitle": "Bedankt voor je feedback",
+    "disclosureStopSheetDescription": "Als je stopt worden er geen gegevens gedeeld met {organization}.",
+    "@disclosureStopSheetDescription": {
+        "placeholders": {
+            "organization": {
+                "example": "DUO",
+                "type": "String"
+            }
+        }
+    },
+    "disclosureStopSheetDescriptionForLogin": "Als je stopt, kun je niet inloggen bij {organization}.",
+    "@disclosureStopSheetDescriptionForLogin": {
+        "placeholders": {
+            "organization": {
+                "example": "DUO",
+                "type": "String"
+            }
+        }
+    },
+    "disclosureStopSheetDescriptionForLoginVariant": "Als je stopt, kun je niet inloggen.",
+    "disclosureStopSheetDescriptionVariant": "Als je stopt worden er geen gegevens gedeeld.",
+    "disclosureStopSheetNegativeCta": "Nee",
+    "disclosureStopSheetPositiveCta": "Ja, stoppen",
+    "disclosureStopSheetReportIssueCta": "Wil je een probleem melden?",
+    "disclosureStopSheetTitle": "Weet je zeker dat je wilt stoppen?",
+    "disclosureStoppedPageCloseCta": "Sluiten",
+    "disclosureStoppedPageDescription": "Omdat je bent gestopt zijn er geen gegevens gedeeld met {organization}.",
+    "disclosureStoppedPageDescriptionForLogin": "Omdat je bent gestopt kan je niet inloggen bij {organization} en er zijn geen gegevens gedeeld met {organization}.",
+    "@disclosureStoppedPageDescriptionForLogin": {
+        "placeholders": {
+            "organization": {
+                "example": "DUO",
+                "type": "String"
+            }
+        }
+    },
+    "disclosureStoppedPageTitle": "Gestopt",
+    "disclosureStoppedPageToWebsiteCta": "Ga naar website",
+    "disclosureSuccessPageCloseCta": "Sluiten",
+    "disclosureSuccessPageDescription": "Je gegevens zijn gedeeld met {organization}. Sluit dit scherm en ga verder op de website van {organization}.",
+    "@disclosureSuccessPageDescription": {
+        "placeholders": {
+            "organization": {
+                "example": "DUO",
+                "type": "String"
+            }
+        }
+    },
+    "disclosureSuccessPageDescriptionForLogin": "Je inloggegevens zijn gedeeld met {organization}. Sluit dit scherm en ga verder op de website van {organization}.",
+    "@disclosureSuccessPageDescriptionForLogin": {
+        "placeholders": {
+            "organization": {
+                "example": "DUO",
+                "type": "String"
+            }
+        }
+    },
+    "disclosureSuccessPageShowHistoryCta": "Bekijk activiteiten",
+    "disclosureSuccessPageTitle": "Gelukt!",
+    "disclosureSuccessPageToDashboardCta": "Naar mijn overzicht",
+    "disclosureSuccessPageToWebsiteCta": "Ga naar website",
+    "errorDetailsSheetTitle": "Foutdetails",
+    "errorScreenDeviceIncompatibleDescription": "Het is niet mogelijk om de NL Wallet app te gebruiken op dit apparaat. Verwijder de app van dit apparaat en download de app op een geschikt apparaat.",
+    "errorScreenDeviceIncompatibleHeadline": "Sorry, dit apparaat is niet geschikt",
+    "errorScreenGenericDescription": "Het is niet gelukt. Wil je het opnieuw proberen?",
+    "errorScreenGenericDescriptionCloseVariant": "Het is niet gelukt. Sluit de app en probeer het later opnieuw.",
+    "errorScreenGenericHeadline": "Sorry, er ging iets mis",
+    "errorScreenNoInternetDescription": "Het lijkt erop dat je momenteel geen verbinding hebt met het internet. Controleer je internet-verbinding of probeer een ander netwerk. Probeer het vervolgens opnieuw.",
+    "errorScreenNoInternetDescriptionCloseVariant": "Het lijkt erop dat je momenteel geen verbinding hebt met het internet. Controleer je internet-verbinding of probeer een ander netwerk. Sluit de app en probeer het later opnieuw.",
+    "errorScreenNoInternetHeadline": "Sorry, geen internet",
+    "errorScreenServerDescription": "Het is niet gelukt om het systeem te bereiken. Dat kan verschillende redenen hebben.\nControleer of je verbonden bent met het internet of gebruik een ander netwerk. Probeer het daarna opnieuw.",
+    "errorScreenServerDescriptionCloseVariant": "Het is niet gelukt om het systeem te bereiken. Dat kan verschillende redenen hebben.\nControleer of je verbonden bent met het internet of gebruik een ander netwerk. Sluit de app en probeer het later opnieuw.",
+    "errorScreenServerHeadline": "Sorry, geen reactie",
+    "errorScreenSessionExpiredDescription": "Deze actie is gestopt omdat er te veel tijd voorbij is gegaan. Dit is bedoeld om je gegevens veilig te houden. Probeer het opnieuw.",
+    "errorScreenSessionExpiredDescriptionCloseVariant": "Deze actie is gestopt omdat er te veel tijd voorbij is gegaan. Dit is bedoeld om je gegevens veilig te houden. Sluit de app en probeer het later opnieuw.",
+    "errorScreenSessionExpiredHeadline": "Sorry, de tijd is voorbij",
+    "flashlightDisabledWCAGAnnouncement": "Zaklamp is uitgezet",
+    "flashlightEnabledWCAGAnnouncement": "Zaklamp is aangezet",
+    "forgotPinScreenCta": "Verwijder Wallet",
+    "forgotPinScreenDescription": "Als je jouw pincode bent vergeten kun je jouw NL Wallet niet meer gebruiken.\n\nWil je weer gebruik maken van de NL Wallet? Dan moet je opnieuw beginnen. Verwijder de NL Wallet en kies een nieuwe pincode.",
+    "forgotPinScreenTitle": "Pincode vergeten?",
+    "generalBottomBackCta": "Terug",
+    "generalCancelCta": "Annuleren",
+    "generalClose": "Sluiten",
+    "generalConfigVersionText": "Appconfig:",
+    "generalDays": "{days, plural, one {{days} dag} other {{days} dagen}}",
+    "@generalDays": {
+        "placeholders": {
+            "days": {
+                "example": "200",
+                "type": "int"
+            }
+        }
+    },
+    "generalHours": "{hours, plural, one {{hours} uur} other {{hours} uur}}",
+    "@generalHours": {
+        "placeholders": {
+            "hours": {
+                "example": "16",
+                "type": "int"
+            }
+        }
+    },
+    "generalMinutes": "{minutes, plural, one {{minutes} minuut} other {{minutes} minuten}}",
+    "@generalMinutes": {
+        "placeholders": {
+            "minutes": {
+                "example": "59",
+                "type": "int"
+            }
+        }
+    },
+    "generalOff": "Uit",
+    "generalOkCta": "OK",
+    "generalOn": "Aan",
+    "generalOsVersionText": "Besturingssysteem:",
+    "generalPolicyAllTermsCta": "Alle voorwaarden",
+    "generalPolicyDataCanBeDeleted": "Je kunt gegevens laten verwijderen",
+    "generalPolicyDataCanNotBeDeleted": "Je kunt gegevens niet laten verwijderen",
+    "generalPolicyDataIsSignature": "Met ondertekenen maak je een afspraak definitief",
+    "generalPolicyDataRetentionDuration": "{days, plural, one {Gegevens worden {days} dag bewaard} other {Gegevens worden {days} dagen bewaard}}",
+    "@generalPolicyDataRetentionDuration": {
+        "placeholders": {
+            "days": {
+                "example": "30",
+                "type": "int"
+            }
+        }
+    },
+    "generalPolicyDataWillBeShared": "Je gegevens worden gedeeld met andere organisaties",
+    "generalPolicyDataWillNotBeShared": "Je gegevens worden niet gedeeld met andere organisaties",
+    "generalRetry": "Probeer opnieuw",
+    "generalSeconds": "{seconds, plural, one {{seconds} seconde} other {{seconds} seconden}}",
+    "@generalSeconds": {
+        "placeholders": {
+            "seconds": {
+                "example": "59",
+                "type": "int"
+            }
+        }
+    },
+    "generalSheetCloseCta": "Sluiten",
+    "generalShowDetailsCta": "Bekijk details",
+    "generalTimeAgo": "geleden",
+    "generalTimeAgoLessThenOneMinute": "minder dan een minuut",
+    "generalVersionText": "Appversie:",
+    "generalWCAGBack": "Terug",
+    "generalWCAGChangeLanguage": "Taal te selecteren",
+    "generalWCAGClose": "Sluiten",
+    "generalWCAGHelp": "Hulp nodig?",
+    "generalWCAGInfo": "Meer info",
+    "generalWCAGLogoutAnnouncement": "Je bent uitgelogd",
+    "generalWCAGMenu": "Menu",
+    "generalWCAGOpenLink": "Open link",
+    "generalWCAGQr": "Scan QR code",
+    "generalWCAGSeeAllActivities": "Alle activiteiten te bekijken",
+    "generalWCAGStepper": "Stap {current} van {total}.",
+    "helpSheetDescription": "Neem contact op met de helpdesk. De volgende gegevens kunnen nodig zijn.",
+    "helpSheetErrorCode": "Foutcode: {code}",
+    "@helpSheetErrorCode": {
+        "placeholders": {
+            "code": {
+                "example": "0.1.3",
+                "type": "String"
+            }
+        }
+    },
+    "helpSheetHelpdeskCta": "Naar de helpdesk",
+    "helpSheetSupportCode": "Supportcode: {code}",
+    "@helpSheetSupportCode": {
+        "placeholders": {
+            "code": {
+                "example": "0.1.3",
+                "type": "String"
+            }
+        }
+    },
+    "helpSheetTitle": "Hulp nodig?",
+    "historyDetailScreenAboutOrganizationCta": "Over {organization}",
+    "historyDetailScreenDisclosureCancelledDescription": "Er zijn geen gegevens gedeeld met {organization}, want je hebt het delen gestopt.",
+    "@historyDetailScreenDisclosureCancelledDescription": {
+        "placeholders": {
+            "organization": {
+                "example": "RvIG",
+                "type": "String"
+            }
+        }
+    },
+    "historyDetailScreenDisclosureErrorDescription": "Er zijn geen gegevens gedeeld met {organization}, want er is iets misgegaan.",
+    "@historyDetailScreenDisclosureErrorDescription": {
+        "placeholders": {
+            "organization": {
+                "example": "RvIG",
+                "type": "String"
+            }
+        }
+    },
+    "historyDetailScreenErrorTitleForDisclosure": "Delen mogelijk mislukt met {organization}",
+    "historyDetailScreenErrorTitleForLogin": "Inloggen bij {organization} mislukt",
+    "historyDetailScreenIssuanceSuccessDescription": "Kaart aangemaakt",
+    "historyDetailScreenOperationStatusExpiredDescription": "Je kaart is verlopen.",
+    "historyDetailScreenOperationStatusRenewedDescription": "Kaart vernieuwd",
+    "historyDetailScreenPurposeTitle": "Reden voor delen",
+    "historyDetailScreenReportIssueCta": "Wil je een probleem melden?",
+    "historyDetailScreenSharedAttributesSubtitle": "{count, plural, one {Alleen het volgende gegeven wordt gedeeld. Niet meer.} other {Alleen deze volgende {count} gegevens worden gedeeld. Niet meer.}}",
+    "@historyDetailScreenSharedAttributesSubtitle": {
+        "placeholders": {
+            "count": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "historyDetailScreenSharedAttributesTitle": "Gegevens gedeeld",
+    "historyDetailScreenShowDetailsCta": "Zie details aanvraag",
+    "historyDetailScreenSigningStatusRejectedDescription": "Er zijn geen gegevens gedeeld met {organization}, want je hebt het ondertekenen gestopt.",
+    "@historyDetailScreenSigningStatusRejectedDescription": {
+        "placeholders": {
+            "organization": {
+                "example": "RvIG",
+                "type": "String"
+            }
+        }
+    },
+    "historyDetailScreenStoppedTitleForDisclosure": "Delen gestopt met {organization}",
+    "historyDetailScreenStoppedTitleForLogin": "Inloggen bij {organization} gestopt",
+    "historyDetailScreenTermsCta": "Lees de voorwaarden",
+    "historyDetailScreenTermsTitle": "Afspraken",
+    "historyDetailScreenTitle": "Details",
+    "historyDetailScreenTitleForDisclosure": "Gedeeld met {organization}",
+    "historyDetailScreenTitleForIssuance": "{card} kaart aangemaakt",
+    "historyDetailScreenTitleForLogin": "Ingelogd bij {organization}",
+    "historyOverviewScreenTitle": "Activiteiten",
+    "introductionConditionsScreenBulletPoints": "Je kunt je gegevens online gebruiken.\nJe kunt op elk moment stoppen.\nJe houdt je pincode voor jezelf.\nJe deelt je gegevens op eigen risico.",
+    "introductionConditionsScreenConditionsCta": "Lees de voorwaarden",
+    "introductionConditionsScreenHeadline": "Dit spreken we af",
+    "introductionConditionsScreenNextCta": "Akkoord",
+    "introductionNextPageCta": "Volgende",
+    "introductionPage1Description": "Dit is jouw digitale portemonnee. Je kunt kaarten toevoegen met je gegevens, zoals je naam en adres.",
+    "introductionPage1Title": "Welkom in de NL Wallet",
+    "introductionPage2Description": "Je kunt veilig inloggen bij de overheid en andere aangesloten organisaties.",
+    "introductionPage2Title": "Veilig inloggen",
+    "introductionPage3Description": "Heeft een organisatie bijvoorbeeld je postcode nodig? Dan deel je eenvoudig je postcode.",
+    "introductionPage3Title": "Eenvoudig gegevens delen",
+    "introductionPrivacyScreenBulletPoints": "Je gegevens staan alleen op dit apparaat.\nJe gegevens zijn beschermd door een pincode.\nTelefoon kwijt? Je kunt de app op afstand op slot zetten.",
+    "introductionPrivacyScreenHeadline": "De NL Wallet respecteert jouw privacy",
+    "introductionPrivacyScreenNextCta": "Volgende",
+    "introductionPrivacyScreenPrivacyCta": "Lees het privacybeleid",
+    "introductionSkipCta": "Overslaan",
+    "introductionWCAGDutchGovernmentLogoLabel": "Rijksoverheid logo",
+    "invalidQrDialogCta": "OK",
+    "invalidQrDialogDescription": "De QR-code die je hebt gescand werd niet herkent. Controleer of je een Wallet QR-code gebruikt en probeer opnieuw.",
+    "invalidQrDialogTitle": "Ongeldige QR-code",
+    "issuanceCheckCardPageConfirmCta": "Ja, volgende",
+    "issuanceCheckCardPageOverline": "Kaart {current} van {total}",
+    "@issuanceCheckCardPageOverline": {
+        "placeholders": {
+            "current": {
+                "example": "1",
+                "type": "int"
+            },
+            "total": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "issuanceCheckCardPageRejectCta": "Nee",
+    "issuanceCheckCardPageTitle": "Kloppen de gegevens",
+    "issuanceCheckDataOfferingPageNegativeCta": "Nee",
+    "issuanceCheckDataOfferingPagePositiveCta": "Ja, toevoegen",
+    "issuanceCheckDataOfferingPageSubtitle": "Als de gegevens kloppen kun je ze toevoegen.",
+    "issuanceCheckDataOfferingPageTitle": "Kloppen de opgehaalde gegevens?",
+    "issuanceConfirmPinPageDescription": "Hiermee geef je toestemming om gegevens uit te wisselen.",
+    "issuanceConfirmPinPageErrorDescription": "{count, plural, one {Je kunt het nog {count} keer proberen} other {Je kunt het nog {count} keer proberen}}",
+    "@issuanceConfirmPinPageErrorDescription": {
+        "placeholders": {
+            "count": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "issuanceConfirmPinPageErrorTitle": "Ongeldige pincode",
+    "issuanceConfirmPinPageTitle": "Vul je pincode in",
+    "issuanceGenericErrorPageCloseCta": "Sluiten",
+    "issuanceGenericErrorPageDescription": "Er ging iets mis. Probeer het later nog eens",
+    "issuanceGenericErrorPageTitle": "Er ging iets mis",
+    "issuanceIdentityValidationFailedPageCloseCta": "Sluiten",
+    "issuanceIdentityValidationFailedPageDescription": "Het lijkt er op dat de gegevens die je probeert op te halen van iemand anders zijn.",
+    "issuanceIdentityValidationFailedPageSomethingNotRightCta": "Klopt er iets niet?",
+    "issuanceIdentityValidationFailedPageTitle": "Je identiteitscontrole kwam niet overeen",
+    "issuanceProofIdentityPageIncorrectCta": "Klopt er iets niet?",
+    "issuanceProofIdentityPageNegativeCta": "Nee",
+    "issuanceProofIdentityPagePositiveCta": "Delen",
+    "issuanceProofIdentityPageRefreshDataSubtitle": "Deel je identiteit met {organization} om opnieuw je gegevens op te halen.",
+    "@issuanceProofIdentityPageRefreshDataSubtitle": {
+        "placeholders": {
+            "organization": {
+                "example": "RvIG",
+                "type": "String"
+            }
+        }
+    },
+    "issuanceProofIdentityPageSubtitle": "Deel je identiteit met {organization} om gegevens op te halen.",
+    "@issuanceProofIdentityPageSubtitle": {
+        "placeholders": {
+            "organization": {
+                "example": "RvIG",
+                "type": "String"
+            }
+        }
+    },
+    "issuanceProofIdentityPageTitle": "Bewijs wie je bent",
+    "issuanceScreenRefreshTitle": "Opnieuw ophalen",
+    "issuanceScreenTitle": "Gegevens ophalen",
+    "issuanceSelectCardsPageAddCta": "Toevoegen",
+    "issuanceSelectCardsPageDataIncorrectCta": "Klopt er iets niet?",
+    "issuanceSelectCardsPageDescription": "Kies welke je wilt toevoegen.",
+    "issuanceSelectCardsPageNoSelectionError": "Kies één of meerdere kaarten om toe te voegen.",
+    "issuanceSelectCardsPageStopCta": "Stop",
+    "issuanceSelectCardsPageTitle": "De volgende kaarten zijn opgehaald",
+    "issuanceStopSheetDescription": "Als je stopt worden er verder geen gegevens meer opgehaald bij {organization}",
+    "@issuanceStopSheetDescription": {
+        "placeholders": {
+            "organization": {
+                "example": "RvIG",
+                "type": "String"
+            }
+        }
+    },
+    "issuanceStopSheetNegativeCta": "Nee",
+    "issuanceStopSheetPositiveCta": "Ja, stoppen",
+    "issuanceStopSheetTitle": "Weet je zeker dat je wilt stoppen?",
+    "issuanceStoppedPageCloseCta": "Sluiten",
+    "issuanceStoppedPageDescription": "Omdat je bent gestopt zijn er geen gegevens opgehaald.",
+    "issuanceStoppedPageGiveFeedbackCta": "Geef feedback",
+    "issuanceStoppedPageTitle": "Delen gestopt",
+    "issuanceSuccessPageCardsAddedSubtitle": "{cards, plural, one {Je kaart is toegevoegd.} other {Je kaarten zijn toegevoegd.}}",
+    "@issuanceSuccessPageCardsAddedSubtitle": {
+        "placeholders": {
+            "cards": {
+                "example": "2",
+                "type": "int"
+            }
+        }
+    },
+    "issuanceSuccessPageCardsUpdatedSubtitle": "{cards, plural, one {Je kaart is vernieuwd.} other {Je kaarten zijn vernieuwd.}}",
+    "@issuanceSuccessPageCardsUpdatedSubtitle": {
+        "placeholders": {
+            "cards": {
+                "example": "2",
+                "type": "int"
+            }
+        }
+    },
+    "issuanceSuccessPageCloseCta": "Naar mijn overzicht",
+    "issuanceSuccessPageTitle": "Gelukt!",
+    "loginDetailScreenAgreementCta": "Lees de voorwaarden",
+    "loginDetailScreenAgreementTitle": "Afspraken",
+    "loginDetailScreenCredentialsBody": "Alleen de volgende gegeven worden gedeeld om in te loggen. Niets meer.",
+    "loginDetailScreenCredentialsTitle": "Inloggegevens",
+    "loginDetailScreenTitle": "Informatie over inloggen bij {organization}",
+    "menuScreenAboutCta": "Over deze app",
+    "menuScreenDesignCta": "Design System",
+    "menuScreenFeedbackCta": "Geef feedback",
+    "menuScreenHelpCta": "Hulp nodig?",
+    "menuScreenHistoryCta": "Activiteiten",
+    "menuScreenLockCta": "Uitloggen",
+    "menuScreenScanQrCta": "Scan QR-code",
+    "menuScreenSettingsCta": "Instellingen",
+    "menuScreenTitle": "Menu",
+    "menuScreenWCAGPageAnnouncement": "Menu in lijst {count} stuks",
+    "mockDigidScreenAcceptCta": "inloggen",
+    "mockDigidScreenDeclineCta": "annuleren",
+    "mockDigidScreenEnterPin": "Voer een willekeurige pincode in om verder te gaan",
+    "mockDigidScreenForgotPinCta": "Pincode vergeten",
+    "mockDigidScreenHeaderSubtitle": "U gaat inloggen bij:",
+    "mockDigidScreenHeaderTitle": "Inloggen",
+    "mockDigidScreenSignInOrganization": "Rijksdienst voor Identiteits­gegevens",
+    "mockDigidScreenTitle": "Vertrouwd inloggen met DigiD",
+    "organizationApprovePageApproveCta": "Ja, volgende",
+    "organizationApprovePageCancelLoginCta": "Stoppen",
+    "organizationApprovePageDenyCta": "Nee",
+    "organizationApprovePageFraudInfoPart1": "Pas op voor fraude. Controleer het webadres op de website waar je QR-code hebt gescand.",
+    "organizationApprovePageFraudInfoPart2": "Ga alleen verder als het adres gelijk is aan {url}.",
+    "organizationApprovePageGenericTitle": "Herken je {organization}?",
+    "@organizationApprovePageGenericTitle": {
+        "placeholders": {
+            "organization": {
+                "example": "DUO",
+                "type": "String"
+            }
+        }
+    },
+    "organizationApprovePageLoginCta": "Inloggen",
+    "organizationApprovePageLoginTitle": "Wil je inloggen bij {organization}?",
+    "@organizationApprovePageLoginTitle": {
+        "placeholders": {
+            "organization": {
+                "example": "DUO",
+                "type": "String"
+            }
+        }
+    },
+    "organizationApprovePageMoreInfoCta": "Bekijk details",
+    "organizationApprovePageShareWithApproveCta": "Ja, verder",
+    "organizationApprovePageShareWithDenyCta": "Stop",
+    "organizationButtonLabel": "Over deze organisatie",
+    "organizationDetailScreenCategoryInfo": "Soort organisatie",
+    "organizationDetailScreenDepartmentInfo": "Afdeling",
+    "organizationDetailScreenKvk": "KVK: {kvk}",
+    "organizationDetailScreenKvkInfo": "KVK nummer",
+    "organizationDetailScreenLegalNameInfo": "Officiële naam",
+    "organizationDetailScreenLocationInfo": "Locatie",
+    "organizationDetailScreenPrivacyInfo": "Privacyverklaring",
+    "organizationDetailScreenReportIssueCta": "Wil je een probleem melden?",
+    "organizationDetailScreenSomeInteractions": "Je hebt eerder gedeeld met {name}",
+    "organizationDetailScreenTitle": "Over {name}",
+    "organizationDetailScreenWebsiteInfo": "Website",
+    "pageIndicatorSemanticsLabel": "Stap {current} van {total}",
+    "pidAddressCardTitle": "Woonadres",
+    "pidIdCardTitle": "Persoons­gegevens",
+    "pinBlockedScreenDescription": "Je hebt je pincode te vaak verkeerd ingevuld. \n\nWil je weer gebruik maken van de Wallet? Dan moet je opnieuw beginnen. Wis de Wallet en kies een nieuwe pincode.",
+    "pinBlockedScreenHeadline": "Je app is geblokkeerd",
+    "pinBlockedScreenResetWalletCta": "Verwijder Wallet",
+    "pinEnteredDigitsAnnouncement": "{count, plural, one {{count} cijfer over} other {{count} cijfers over}}",
+    "pinErrorDialogCloseCta": "SLUITEN",
+    "pinErrorDialogFinalRoundFinalAttempt": "Je mag het nog 1 keer proberen. Als de volgende pincode ongeldig is wordt de app permanent geblokkeerd.",
+    "pinErrorDialogFinalRoundNonFinalAttempt": "Je mag het nog {count} keer proberen. Na {count} ongeldige pincodes wordt de app permanent geblokkeerd.",
+    "@pinErrorDialogFinalRoundNonFinalAttempt": {
+        "placeholders": {
+            "count": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "pinErrorDialogForgotCodeCta": "PINCODE VERGETEN?",
+    "pinErrorDialogNonFinalRoundFinalAttempt": "Je mag het nog 1 keer proberen. Als de volgende pincode ongeldig is wordt de app tijdelijk geblokkeerd.",
+    "pinErrorDialogNonFinalRoundInitialAttempt": "Pincode onjuist, probeer opnieuw.",
+    "pinErrorDialogNonFinalRoundNonFinalAttempt": "Je mag het nog {count} keer proberen.",
+    "@pinErrorDialogNonFinalRoundNonFinalAttempt": {
+        "placeholders": {
+            "count": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "pinErrorDialogRestartSetupWarning": "Je mag het nog 1 keer proberen. Als de volgende pincode ongeldig is, zal het aanmaken proces opnieuw starten vanaf het begin.",
+    "pinErrorDialogTitle": "Verkeerde pincode",
+    "pinFieldAnnouncementLabel": "{count, plural, one {Toegangscode, {count} cijfer over} other {Toeganscode, {count} cijfers over}}",
+    "pinKeyboardWCAGBackspaceLabel": "Verwijder",
+    "pinKeyboardWCAGBackspaceLongPressHint": "Alles te verwijderen",
+    "pinKeyboardWCAGDigitKeyTapHint": "kiezen",
+    "pinScreenForgotPinCta": "Pincode vergeten?",
+    "pinScreenHeader": "Open met je pincode",
+    "pinTimeoutScreenClearWalletCta": "Wallet wissen",
+    "pinTimeoutScreenForgotPinCta": "Pincode vergeten?",
+    "pinTimeoutScreenHeadline": "Tijdelijk geblokkeerd",
+    "pinTimeoutScreenTimeoutCountdown": "Je hebt je pincode te vaak verkeerd ingevuld. Probeer het opnieuw in {timeLeft}.",
+    "@pinTimeoutScreenTimeoutCountdown": {
+        "placeholders": {
+            "timeLeft": {
+                "example": "47 seconds",
+                "type": "String"
+            }
+        }
+    },
+    "placeholderScreenContractDescription": "Hier komt het contract te staan.",
+    "placeholderScreenGenericDescription": "Heb je vragen of hulp nodig? Tijdens de beproeving staat het NL Wallet-team voor je klaar. Spreek iemand aan, die zal je verder helpen.",
+    "placeholderScreenHeadline": "Helaas, aan deze pagina wordt nog gewerkt.",
+    "placeholderScreenHelpDescription": "Tijdens de beproeving staat het NL Wallet-team voor je klaar. Spreek iemand aan, die zal je verder helpen.",
+    "placeholderScreenHelpHeadline": "Heb je vragen of hulp nodig?",
+    "policyScreenDataCanBeDeleted": "Je kunt gegevens laten verwijderen",
+    "policyScreenDataCanBeDeletedDescription": "De organisatie biedt een manier om je gegevens te laten verwijderen.",
+    "policyScreenDataCanNotBeDeleted": "Je kunt gegevens niet laten verwijderen",
+    "policyScreenDataCanNotBeDeletedDescription": "De organisatie biedt geen manier om je gegevens te laten verwijderen.",
+    "policyScreenDataIsSignature": "Met ondertekenen maak je een afspraak definitief",
+    "policyScreenDataNotBeStored": "Je gegevens worden niet bewaard",
+    "policyScreenDataNotBeStoredDescription": "Je gegevens worden alleen gebruikt in deze sessie en niet verder opgeslagen.",
+    "policyScreenDataPurposeDescription": "De gegevens worden niet voor andere doelen gebruikt.",
+    "policyScreenDataRetentionDuration": "{months, plural, one {Gegevens worden {months} maand bewaard} other {Gegevens worden {months} maanden bewaard}}",
+    "@policyScreenDataRetentionDuration": {
+        "placeholders": {
+            "months": {
+                "example": "30",
+                "type": "int"
+            }
+        }
+    },
+    "policyScreenDataRetentionDurationDescription": "{months, plural, one {Je gegeven wordt {months} maand bewaard in je dossier. Daarna wordt het automatisch verwijderd.} other {Je gegevens worden {months} maanden bewaard in je dossier. Daarna worden ze automatisch verwijderd.}}",
+    "@policyScreenDataRetentionDurationDescription": {
+        "placeholders": {
+            "months": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "policyScreenDataWillBeShared": "Gegevens worden gedeeld met andere organisaties",
+    "policyScreenDataWillBeSharedDescription": "Je gegevens worden gedeeld met andere bedrijven of organisaties.",
+    "policyScreenDataWillNotBeShared": "Gegevens worden niet gedeeld met andere organisaties",
+    "policyScreenDataWillNotBeSharedDescription": "Je gegevens worden niet gedeeld met andere bedrijven of organisaties",
+    "policyScreenPolicySectionPolicyCta": "privacybeleid",
+    "policyScreenPolicySectionText": "Bekijk het {policy} voor meer informatie over hoe je gegevens gebruikt gaan worden.",
+    "@policyScreenPolicySectionText": {
+        "placeholders": {
+            "policy": {
+                "example": "privacy policy",
+                "type": "String"
+            }
+        }
+    },
+    "policyScreenPolicySectionTitle": "Meer weten?",
+    "policyScreenReportIssueCta": "Wil je een probleem melden?",
+    "policyScreenSubtitle": "De volgende afspraken gelden alléén voor deze uitnodiging tot delen.",
+    "policyScreenTitle": "Afspraken",
+    "qrMyCodeTabHowToCta": "Hoe werkt mijn QR code?",
+    "qrMyCodeTabHowToSheetCloseCta": "Sluiten",
+    "qrMyCodeTabHowToSheetDescription": "Laat de QR-code scannen door een controleur om te beginnen met delen. Vervolgens krijg je een gegevens verzoek. Alleen als je akkoord gaat met het verzoek zullen gegevens worden gedeeld.",
+    "qrMyCodeTabHowToSheetTitle": "Hoe werkt mijn QR-code?",
+    "qrScanTabCameraScanningQrScanningAnnouncement": "Richt je camera op een QR-code",
+    "qrScanTabContinueCta": "Nog een QR-code scannen",
+    "qrScanTabGrantPermissionCta": "Toegang geven tot camera",
+    "qrScreenDisableTorchCta": "Zet zaklamp uit",
+    "qrScreenEnableTorchCta": "Zet zaklamp aan",
+    "qrScreenPermissionHint": "De NL Wallet heeft toegang nodig tot je camera om een QR-code te scannen",
+    "qrScreenScanHint": "Richt je camera op een QR-code",
+    "reportIssueScreenHeaderTitle": "Welk probleem wil je melden? Je melding wordt anoniem verstuurd.",
+    "reportIssueScreenTitle": "Wil je een probleem melden?",
+    "reportOptionImpersonatingOrganization": "Deze organisatie doet zich voor als een ander",
+    "reportOptionOverAskingOrganization": "Deze organisatie vraagt te veel gegevens",
+    "reportOptionRequestNotInitiated": "Ik ben deze aanvraag niet gestart",
+    "reportOptionSuspiciousOrganization": "Deze organisatie lijkt verdacht",
+    "reportOptionUnknownOrganization": "Ik ken deze organisatie niet",
+    "reportOptionUnreasonableTerms": "Ik ben het niet eens met de voorwaarden",
+    "reportOptionUntrusted": "Ik vertrouw het niet",
+    "requestDetailScreenTitle": "Aanvraag details",
+    "resetWalletDialogBody": "Hiermee verwijder je alle gegevens in de app. Vervolgens begin je opnieuw met de app-inleiding en kun je opnieuw je wallet aanmaken.",
+    "resetWalletDialogCancelCta": "ANNULEREN",
+    "resetWalletDialogConfirmCta": "JA, VERWIJDEREN",
+    "resetWalletDialogTitle": "Wil je alle gegevens verwijderen?",
+    "scanWithWalletDialogBody": "Het lijkt erop dat je een QR-code hebt gescand met een andere app. Scan voor de zekerheid de QR-code met de NL Wallet.",
+    "scanWithWalletDialogScanCta": "Scan QR-code",
+    "scanWithWalletDialogTitle": "Scan QR-code met NL Wallet",
+    "settingsScreenChangeLanguageCta": "Taal veranderen",
+    "settingsScreenChangePinCta": "Pincode veranderen",
+    "settingsScreenClearDataCta": "Gegevens verwijderen",
+    "settingsScreenSetupBiometricsCta": "Biometrie instellen",
+    "settingsScreenTitle": "Instellingen",
+    "setupSecurityCompletedPageCreateWalletCta": "Maak wallet aan",
+    "setupSecurityCompletedPageDescription": "Je app is beveiligd met je pincode.",
+    "setupSecurityCompletedPageTitle": "Gelukt!",
+    "setupSecurityConfirmationErrorPageDescription": "Probeer opnieuw.",
+    "setupSecurityConfirmationErrorPageFatalCta": "Nieuwe pincode kiezen",
+    "setupSecurityConfirmationErrorPageFatalDescription": "Kies een nieuwe pincode.",
+    "setupSecurityConfirmationErrorPageFatalTitle": "Deze pincode is anders",
+    "setupSecurityConfirmationErrorPageTitle": "Deze pincode is anders",
+    "setupSecurityConfirmationPageTitle": "Herhaal je pincode",
+    "setupSecurityLoadingPageDescription": "Momentje...",
+    "setupSecurityLoadingPageTitle": "Opslaan",
+    "setupSecurityScreenWCAGPinChosenAnnouncement": "Pincode gekozen. Herhaal pincode om te bevestigen.",
+    "setupSecuritySelectPinErrorPageAscendingOrDescendingDigitsError": "Gebruik geen cijfers op volgorde. Kies een andere pincode.",
+    "setupSecuritySelectPinErrorPageDefaultError": "Kies een andere pincode",
+    "setupSecuritySelectPinErrorPageTitle": "Deze pincode is te simpel",
+    "setupSecuritySelectPinErrorPageTooFewUniqueDigitsError": "Kies een pincode met verschillende cijfers.",
+    "setupSecuritySelectPinPageTitle": "Kies een 6-cijferige pincode",
+    "sharedAttributesCardCta": "Bekijk",
+    "sharedAttributesCardTitle": "{count} uit {cardTitle}",
+    "showDetailsCta": "Bekijk",
+    "signConfirmPinPageDescription": "Hiermee geef je toestemming om gegevens uit te wisselen.",
+    "signConfirmPinPageErrorDescription": "{count, plural, one {Je kunt het nog {count} keer proberen} other {Je kunt het nog {count} keer proberen}}",
+    "@signConfirmPinPageErrorDescription": {
+        "placeholders": {
+            "count": {
+                "example": "3",
+                "type": "int"
+            }
+        }
+    },
+    "signConfirmPinPageErrorTitle": "Ongeldige pincode",
+    "signConfirmPinPageTitle": "Vul je pincode in",
+    "signGenericErrorPageCloseCta": "Sluiten",
+    "signGenericErrorPageDescription": "Er ging iets mis. Probeer het later nog eens.",
+    "signGenericErrorPageTitle": "Er ging iets mis",
+    "signScreenCancelSheetDescription": "Als je stopt worden de afspraken niet ondertekend.",
+    "signScreenCancelSheetNegativeCta": "Nee",
+    "signScreenCancelSheetPositiveCta": "Ja, stoppen",
+    "signScreenCancelSheetTitle": "Weet je zeker dat je wilt stoppen?",
+    "signScreenTitle": "Ondertekenen",
+    "signStoppedPageCloseCta": "Sluiten",
+    "signStoppedPageDescription": "Door te stoppen heb je de afspraken niet ondertekend.",
+    "signStoppedPageFeedbackCta": "Geef feedback",
+    "signStoppedPageTitle": "Ondertekenen gestopt",
+    "signSuccessPageCloseCta": "Sluiten",
+    "signSuccessPageDescription": "Je hebt de afspraken met {organization} ondertekend.",
+    "@signSuccessPageDescription": {
+        "placeholders": {
+            "organization": {
+                "example": "Housing Corp. A",
+                "type": "String"
+            }
+        }
+    },
+    "signSuccessPageHistoryCta": "Activiteiten",
+    "signSuccessPageTitle": "Gelukt!",
+    "walletPersonalizeCheckDataOfferingPageAcceptCta": "Ja, klopt",
+    "walletPersonalizeCheckDataOfferingPageAddressLabel": "Adres",
+    "walletPersonalizeCheckDataOfferingPageBirthInfoLabel": "Geboren",
+    "walletPersonalizeCheckDataOfferingPageBirthInfoValue": "{birthDate} in {birthPlace}, {birthCountry}",
+    "@walletPersonalizeCheckDataOfferingPageBirthInfoValue": {
+        "placeholders": {
+            "birthCountry": {
+                "example": "Nederland",
+                "type": "String"
+            },
+            "birthDate": {
+                "example": "01-01-1980",
+                "type": "String"
+            },
+            "birthPlace": {
+                "example": "Leiden",
+                "type": "String"
+            }
+        }
+    },
+    "walletPersonalizeCheckDataOfferingPageCitizenIdLabel": "Burger­service­nummer (BSN)",
+    "walletPersonalizeCheckDataOfferingPageDeclineCta": "Nee",
+    "walletPersonalizeCheckDataOfferingPageDeclineCtaSemanticsLabel": "Nee, er klopt iets niet",
+    "walletPersonalizeCheckDataOfferingPageGenderLabel": "Geslacht",
+    "walletPersonalizeCheckDataOfferingPageNameLabel": "Naam",
+    "walletPersonalizeCheckDataOfferingPageSpouseOrPartnerLabel": "Getrouwd of geregistreerd partnerschap",
+    "walletPersonalizeCheckDataOfferingPageSubtitle": "Je gegevens zijn opgehaald via DigiD.",
+    "walletPersonalizeCheckDataOfferingPageTitle": "Kloppen deze gegevens?",
+    "walletPersonalizeConfirmPinPageTitle": "Gegevens toevoegen met je pincode",
+    "walletPersonalizeDataIncorrectScreenDescription": "Als je gegevens niet kloppen kan dat voor problemen zorgen. Voeg daarom gegevens niet toe.",
+    "walletPersonalizeDataIncorrectScreenHowToResolveBulletPoints": "Neem contact op met jouw gemeente om je gegevens te laten aanpassen.\nWacht op een bericht van je gemeente dat de aanpassing is gelukt.\nLog opnieuw in met DigiD om de juiste gegevens op te halen.",
+    "walletPersonalizeDataIncorrectScreenHowToResolveTitle": "Hoe kan ik foute gegevens aanpassen?",
+    "walletPersonalizeDataIncorrectScreenNotYourDataDescription": "Voeg de gegevens niet toe en log in met je eigen DigiD.",
+    "walletPersonalizeDataIncorrectScreenNotYourDataTitle": "Zijn dit niet jouw gegevens?",
+    "walletPersonalizeDataIncorrectScreenPrimaryCta": "Gegevens niet toevoegen",
+    "walletPersonalizeDataIncorrectScreenSubhead": "Kloppen de gegevens niet?",
+    "walletPersonalizeDigidCancelledPageDescription": "Wil je toch jouw persoonsgegevens ophalen? Log dan opnieuw in bij DigiD.",
+    "walletPersonalizeDigidCancelledPageTitle": "Inloggen afgebroken",
+    "walletPersonalizeDigidErrorPageDescription": "Wil je toch jouw persoonsgegevens ophalen? Log dan opnieuw in bij DigiD.",
+    "walletPersonalizeDigidErrorPageLoginWithDigidCta": "Opnieuw inloggen",
+    "walletPersonalizeDigidErrorPageNoDigidCta": "Hulp nodig met DigiD?",
+    "walletPersonalizeDigidErrorPageTitle": "Inloggen niet gelukt",
+    "walletPersonalizeIntroPageDescription": "Je maakt je wallet aan door één keer je gegevens toe te voegen via de DigiD app.",
+    "walletPersonalizeIntroPageLoginWithDigidCta": "Open de DigiD app",
+    "walletPersonalizeIntroPageNoDigidCta": "Geen DigiD?",
+    "walletPersonalizeIntroPageTitle": "Haal één keer je gegevens op via DigiD",
+    "walletPersonalizeNoDigidPageDescription": "Op dit moment kun je alleen een Wallet aanmaken met de DigiD app.\n\nWoon je in Nederland en heb je een Nederlands identiteitsbewijs? Dan kun je een DigiD aanvragen.",
+    "walletPersonalizeNoDigidPageHeadline": "Geen DigiD?",
+    "walletPersonalizeNoDigidPageRequestDigidCta": "DigiD aanvragen",
+    "walletPersonalizeScreenDigidLoadingStopCta": "Stoppen",
+    "walletPersonalizeScreenDigidLoadingSubtitle": "Je wordt automatisch doorgestuurd",
+    "walletPersonalizeScreenDigidLoadingTitle": "Login bij DigiD",
+    "walletPersonalizeScreenErrorDescription": "Er is iets mis gegaan, probeer opnieuw.",
+    "walletPersonalizeScreenErrorRetryCta": "Probeer opnieuw",
+    "walletPersonalizeScreenErrorTitle": "Personaliseren mislukt",
+    "walletPersonalizeScreenExitSheetCancelCta": "Nee",
+    "walletPersonalizeScreenExitSheetConfirmCta": "Ja, stoppen",
+    "walletPersonalizeScreenExitSheetDescription": "Weet je zeker dat je wilt stoppen met het aanmaken van een Wallet?",
+    "walletPersonalizeScreenExitSheetTitle": "Stop",
+    "walletPersonalizeScreenLoadingSubtitle": "Momentje...",
+    "walletPersonalizeScreenLoadingTitle": "Aan het laden",
+    "walletPersonalizeScreenStopDigidDialogNegativeCta": "Terug",
+    "walletPersonalizeScreenStopDigidDialogPositiveCta": "Inloggen stoppen",
+    "walletPersonalizeScreenStopDigidDialogSubtitle": "Weet je zeker dat je wil stoppen?",
+    "walletPersonalizeScreenStopDigidDialogTitle": "DigiD inloggen stoppen?",
+    "walletPersonalizeScreenTitle": "Maak wallet aan",
+    "walletPersonalizeSetupFailedScreenCta": "Probeer opnieuw",
+    "walletPersonalizeSetupFailedScreenDescription": "Je hebt te vaak een ongeldige pincode ingevuld. Kies een nieuwe pincode en begin opnieuw.",
+    "walletPersonalizeSetupFailedScreenHeadline": "Aanmaken mislukt",
+    "walletPersonalizeSuccessPageContinueCta": "Naar mijn overzicht",
+    "walletPersonalizeSuccessPageDescription": "Je gegevens zijn opgeslagen op de volgende kaarten. Deze zijn altijd beschikbaar in je wallet overzicht.",
+    "walletPersonalizeSuccessPageTitle": "Gelukt!"
+}
